@@ -1,8 +1,15 @@
 package com.iot.sp.user.dao;
 
+import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.springframework.stereotype.Service;
 
-@Service
-public class UserDaoImpl extends SqlSessionDaoSuppot implements UserDao{
+import com.iot.sp.user.dto.UserInfo;
 
+@Service
+public class UserDaoImpl extends SqlSessionDaoSupport implements UserDao{
+
+	@Override
+	public UserInfo selectUser(UserInfo user){
+		return this.getSqlSession().selectOne("userinfo.SELECT_USER",user);
+	}
 }
