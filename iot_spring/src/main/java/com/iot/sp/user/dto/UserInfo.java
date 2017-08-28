@@ -12,10 +12,11 @@ public class UserInfo {
 	private String hp1;
 	private String hp2;
 	private String hp3;
-	private String userpwd;
-	private int departnum;
-	private String userrolelevel;
+	private String userPwd;
+	private int departNum;
+	private String userRoleLevel;
 	private String gender;
+	
 	public int getUserNum() {
 		return userNum;
 	}
@@ -64,35 +65,35 @@ public class UserInfo {
 	public void setHp3(String hp3) {
 		this.hp3 = hp3;
 	}
-	public String getUserpwd() {
-		return userpwd;
-	}
-	public void setUserpwd(String userpwd) {
-		this.userpwd = userpwd;
-	}
-	public int getDepartnum() {
-		return departnum;
-	}
-	public void setDepartnum(int departnum) {
-		this.departnum = departnum;
-	}
-	public String getUserrolelevel() {
-		return userrolelevel;
-	}
-	public void setUserrolelevel(String userrolelevel) {
-		this.userrolelevel = userrolelevel;
-	}
 	public String getGender() {
 		return gender;
 	}
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	public String getUserPwd() {
+		return userPwd;
+	}
+	public void setUserPwd(String userPwd) {
+		this.userPwd = userPwd;
+	}
+	public int getDepartNum() {
+		return departNum;
+	}
+	public void setDepartNum(int departNum) {
+		this.departNum = departNum;
+	}
+	public String getUserRoleLevel() {
+		return userRoleLevel;
+	}
+	public void setUserRoleLevel(String userRoleLevel) {
+		this.userRoleLevel = userRoleLevel;
+	}
 	@Override
 	public String toString() {
 		return "UserInfo [userNum=" + userNum + ", userId=" + userId + ", userName=" + userName + ", age=" + age
-				+ ", address=" + address + ", hp1=" + hp1 + ", hp2=" + hp2 + ", hp3=" + hp3 + ", userpwd=" + userpwd
-				+ ", departnum=" + departnum + ", userrolelevel=" + userrolelevel + ", gender=" + gender + "]";
+				+ ", address=" + address + ", hp1=" + hp1 + ", hp2=" + hp2 + ", hp3=" + hp3 + ", userPwd=" + userPwd
+				+ ", departNum=" + departNum + ", userRoleLevel=" + userRoleLevel + ", gender=" + gender + "]";
 	}
 	
 	
